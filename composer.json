@@ -1,0 +1,24 @@
+{
+    "name": "jackmarchant/async-php",
+    "description": "Code examples of using asynchronous programming with PHP",
+    "autoload": {
+        "psr-4": {
+            "Jackmarchant\\AsyncPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jack Marchant",
+            "email": "jack@jackmarchant.com"
+        }
+    ],
+    "scripts": {
+        "run-exec": "php src/exec.php",
+        "run-pcntl-fork": "php src/pcntl_fork.php",
+        "run-amphp": "php src/amphp.php",
+        "run-pcntl-fork-exec": "php src/pcntl_fork_with_exec.php"
+    },
+    "require": {
+        "amphp/amp": "^3.0"
+    }
+}
